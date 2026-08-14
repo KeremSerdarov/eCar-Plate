@@ -10,11 +10,11 @@
                 <div class="card border-0 shadow-lg rounded-4 p-4">
                     <h1 class="fw-bold fs-3"
                         style="background: linear-gradient(135deg, #2E7D32, #1B5E20); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                        🚗 Arkadag Ulag Hasaba Alyş
+                        🚗 eCar Plate — Ulag Belgi Hasaba Alyş
                     </h1>
                     <p class="text-muted mb-4">
                         <i class="fa-solid fa-circle-check text-success"></i>
-                        Täze ulag belgisi - Resmi döwlet hyzmaty
+                        Türkmenistan — Resmi ulag belgi hasaba alyş ulgamy
                     </p>
 
                     @include('home.partials.plate')
@@ -63,10 +63,6 @@
                         disabled>
                         <i class="fa-solid fa-check-circle"></i> HASABA ALMAK
                     </button>
-
-                    <a href="{{ route('admin.login') }}" class="btn btn-outline-secondary w-100 mt-3 rounded-3">
-                        <i class="fa-solid fa-lock"></i> Admin Paneli
-                    </a>
                 </div>
             </div>
 
