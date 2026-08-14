@@ -1,0 +1,13 @@
+1. whereHas() haysydyr bir zada gora mysal ucin menkide plateType-a gora ady Vip nomer bolanlary filter etmek ucin ulanylyar:
+$vipCount = Plate::whereHas('plateType', fn($q) => $q->where('name', 'VIP Nomer'))->count();
+
+
+
+2. $table->foreignId() haysydyr bir tablisalary baglanysdyrmak ucin ulanylyar mysal ucin meninnide regions, plate_types, users tablisalary baglanysdyryar:
+$table->foreignId('region_id')->constrained()->cascadeOnDelete();
+$table->foreignId('plate_type_id')->constrained()->cascadeOnDelete();
+$table->foreignId('user_id')->constrained()->cascadeOnDelete();
+
+
+
+3. auth()->user() - Bu Laravel-de ulgama giriş eden ulanyjy bilen işlemek üçin kömekçi funksiýadyr. Men muny proyektda ulanmadym.
